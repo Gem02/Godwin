@@ -1,0 +1,737 @@
+*{   margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+header .head{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px 20px 70px;
+    background: rgb(255, 255, 255, 0.9);
+    z-index: 1000;
+}
+header .head .logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header .head .circle{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: solid rgb(0, 0, 0) 3px;
+}
+
+header .head .logo .text strong{
+    font-size: 27px;
+    font-weight: 700;
+}
+header .head .logo .text p{
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+header nav h3{
+    font-size: 17px;
+    cursor: pointer;
+    display: none;
+}
+header .head .menuoptions .closebtn{
+    display: none;
+}
+header .head .menuoptions .a{
+    display: flex;
+    gap: 30px;
+}
+header .head .menuoptions a{
+    color: black;
+    font-weight: 800;
+}
+header .headbody{
+    margin-top: 70px;
+    display: flex;
+    padding: 0 70px;
+    width: 100%;
+    max-width: 13000px;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+    height: fit-content;
+    overflow: hidden;
+    justify-content: center;
+}
+header .headbody .image{
+    width: 100%;
+    height: 800px;
+}
+
+header .image img{
+    margin-top: 80px;
+}
+header .headbody .text h5{
+    font-size: 12px;
+    letter-spacing: 8px;
+    font-weight: 500;
+    color: rgb(114, 114, 114);
+}
+header .headbody .text h1{
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 70px;
+    margin: 20px 0;
+    font-family: Arial, Helvetica;
+}
+header .headbody .text p{
+    font-size: 19px;
+    color: gray;
+}
+
+header .headbody .text .calltoaction{
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+header .headbody .text .calltoaction button{
+    padding: 10px 20px;
+    cursor: pointer;
+    background: none;
+    font-weight: 600;
+    border: solid 1px rgb(196, 194, 194);
+}
+header .headbody .text .calltoaction button a{
+    color: black;
+}
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+    background-color: rgb(237, 241, 237);
+}
+section .space{
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: center;
+    color: gray;
+    letter-spacing: 3px;
+}
+section .heading{
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;display: flex;
+    text-align: left;
+    margin: 15px 0 0 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.projects .aboutme{
+    width: 100%;
+}
+.projects .aboutme .aboutdetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.projects .aboutme .aboutdetails p{
+    margin: 30px 0;
+    font-size: 35px;
+    font-family: Arial, Helvetica;
+    font-weight: 900;
+    line-height: 35px;
+    max-width: 1000px;
+    text-align: center;
+}
+.projects .aboutme .aboutdetails span{
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 1000px;
+    text-align: center;
+    display: flex;
+    color: gray;
+}
+.projects .aboutme .experienced{
+    font-size: 40px;
+    text-align: left;
+    font-weight: 800;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+}
+.projects .aboutme .technologies{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+.projects .aboutme .technologies .item{
+    background: white;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+}
+.projects .aboutme .technologies .item.pending{
+    opacity: .3;
+}
+.projects .aboutme .technologies .item img{
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.portfolio{
+    background: white;
+}
+.portfolio .projectsDisplay{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.portfolio .projectsDisplay .project img{
+    width: 100%;
+}
+.portfolio .projectsDisplay .project h4{
+    color: rgb(0, 0, 0);
+    margin: 10px 0;
+}
+.portfolio .projectsDisplay .project{
+    box-shadow: 0 0 20px rgba(68, 68, 68, 0.205);
+    padding: 10px;
+    transition: all .3s;
+    flex: 1 0 400px;
+}
+.portfolio .projectsDisplay .project:hover{
+    box-shadow: none;
+}
+.portfolio .projectsDisplay .project p{
+    color: gray;
+    font-size: 15px;
+}
+.portfolio .projectsDisplay .project h5{
+    color: rgb(83, 83, 83);
+    margin: 10px 0;
+
+}
+.portfolio .projectsDisplay .project .tech{
+    display: flex;
+    gap: 10px;
+}
+.portfolio .projectsDisplay .project .tech .react{
+    background: white;
+}
+.portfolio .projectsDisplay .project .css{
+    object-fit: cover;
+}
+.portfolio .projectsDisplay .project .css img{
+    height: 30px;
+}
+.portfolio .projectsDisplay .project .tech img{
+    width: 100px;
+}
+.portfolio .projectsDisplay .project .directories{
+    display: flex;
+    gap: 20px;
+    margin: 15px 0;
+}
+.portfolio .projectsDisplay .project .directories a{
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+}
+.portfolio .projectsDisplay .project .tech .icon{
+    width: 50px;
+}
+.portfolio .projectsDisplay .project .tech .icon.css{
+    width: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact{
+    background: none;
+    position: relative;
+}
+.contact .heading{
+    margin-bottom: 50px;
+}
+.contact .mainpart .talk{
+    color: gray;
+    width: 300px;
+}
+.contact .mainpart{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contact .mainpart .form{
+    position: absolute;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.158);
+    right: 50px;
+    padding: 20px;
+    background: white;
+    top: 220px;
+    width: 500px;
+    height: fit-content;
+}
+.contact .mainpart .form form .input{
+    display: flex;
+    gap: 20px;
+}
+.contact .mainpart .form form .input input{
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid rgb(211, 210, 210);
+    background: none;
+    width: 100%;
+}
+.contact .mainpart .form form textarea{
+    font-size: 15px;
+    border: 1px solid rgb(218, 214, 214);
+    padding: 10px;
+    margin-top: 10px;
+    background: none;
+    width: 100%;
+}
+.contact .mainpart .form form button{
+    font-size: 15px;
+    border: none;
+    background: black;
+    color: white;
+    font-weight: 400;
+    padding: 10px 40px;
+    width: 100%;
+    margin: 10px 0;
+    transition: all .2s;
+}
+.contact .mainpart .form form button:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.438);
+}
+.contact .mainpart .contactinfo .top h1{
+    margin-top: 20px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact .mainpart .contactinfo .top p{
+    font-weight: 400;
+    font-size: 13px;
+}
+.contact .mainpart .contactinfo .middle{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 13px;
+    margin-top: 20px;
+}
+.contact .mainpart .contactinfo .middle .flex{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.contact .mainpart .contactinfo .buttom{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+.contact .mainpart .contactinfo .buttom a{
+    color: black;
+}
+.contact .space{
+    margin: 20px;
+}
+.footer{
+    background: rgb(49, 49, 49);
+}
+.footer .logo{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.footer .logo .circle{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    color: white;
+    width: 30px;
+    border-radius: 50%;
+    border: solid rgb(255, 255, 255) 3px;
+}
+.footer .logo .text strong{
+    font-size: 27px;
+    color: white;
+    font-weight: 700;
+}
+.footer .logo .text p{
+    text-transform: uppercase;
+    font-size: 11px;
+    color: white;
+    letter-spacing: 3px;
+}
+.footer .content .ftext{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    font-size: 13px;
+    color: white;
+
+}
+.footer .content .buttom{
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+.last{
+    gap: 5px;
+    background: black;
+    padding: 10px;
+    color: gray;
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+}
+.last .flex{
+    display: flex;
+}
+.buttom a{
+    color: white;
+    font-size: 17px;
+}
+
+@media (max-width:950px){
+
+    header .head{
+        padding: 20px 30px;
+    }
+    header .headbody{
+        padding: 0 30px;
+        margin: 0 auto;
+    }
+    section{
+        padding: 30px;
+    }
+    .contact .mainpart .form{
+        position: static;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .contact .mainpart .talk{
+        width: 100%;
+    }
+ }
+
+ @media (max-width: 900px){
+    header .head .circle{
+        padding: 17px;
+        height: 23px;
+        width: 23px;
+    }
+    
+    header .head .logo .text strong{
+        font-size: 20px;
+    }
+    header .head .logo .text p{
+        font-size: 9px;
+    }
+    header nav h3{
+        font-size: 13px;
+        cursor: pointer;
+    }
+    header .headbody .text h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+ }
+ @media (max-width: 800px){
+    header .headbody{
+        height: fit-content;
+    }
+    header .headbody .text{
+        padding-top: 100px;
+    }
+    header .headbody .image{
+        object-fit: cover;
+        height: fit-content;
+    }
+    header .image img{
+        margin-top: 80px;
+        width: 300px;
+    }
+    header nav h3{
+        display: block;
+    }
+    header .head .menuoptions{
+        position: absolute;
+        width: 200px;
+        height: 100vh;
+        background: rgba(2, 0, 14, 0.9);
+        top: 0;
+        right: -400px;
+        transition: all .2s;
+    }
+    header .head .menuoptions.active{
+        right: 0;
+    }
+    header .head .menuoptions .closebtn{
+        position: absolute;
+        display: block;
+        color: white;
+        padding: 20px;
+        cursor: pointer;
+    }
+    header .head .menuoptions .a{
+        position: absolute;
+        top: 70px;
+        left: 20px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    header .head .menuoptions a{
+        color: white;
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+ }
+ @media (max-width: 650px){
+    header .headbody .text{
+        position: absolute;
+        width: 100%;
+        padding: 0 20px;
+        top: 400px;
+        z-index: 100;
+    }
+    header .headbody .text p{
+        font-size: 20px;
+        color: gray;
+        max-width: 300px;
+    }
+    header .headbody .image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-top: 50px;
+    }
+    header .image img{
+        width: 400px;
+    }
+    header .headbody .text .calltoaction button{
+        border: none;
+        background: rgba(0, 0, 0, 0.623);
+        transition: all .2s;
+    }
+    header .headbody .text .calltoaction button a{
+        color: rgb(255, 255, 255);
+    }
+    header .headbody .text .calltoaction button:hover{
+        background: black;
+    }
+    .overlay{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255));
+        position: absolute;
+    }
+    header .headbody{
+        align-items: flex-start;
+        height: 900px
+    }
+    .projects .aboutme .aboutdetails p{
+        font-size: 20px;
+        line-height: 22px;
+        width: 100%;
+    }
+    .projects .aboutme .aboutdetails span{
+        font-size: 13px;
+        width: 100%;
+    }
+    section{
+        padding: 20px;
+    }
+    section .heading{
+        font-size: 25px;
+    }
+    .portfolio .projectsDisplay .project{
+        flex: 1 0 300px;
+    }
+ }
+ @media (max-width: 430px){
+    header .head{
+        padding: 15px;
+    }
+    header .head .logo{
+    }
+    header .headbody{
+        padding: 0;
+    }
+    header .headbody .text{
+        padding: 0 10px;
+    }
+    header .headbody .text .calltoaction{
+        justify-content: center;
+    }
+    header .headbody .text .calltoaction button{
+        padding: 10px 15px;
+    }
+    header .headbody .text h1{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .projects .aboutme .experienced{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    section{
+        padding: 20 10px;
+    }
+    .projects .aboutme .technologies{
+        margin-top: 15px;
+        gap: 15px;
+    }
+    .projects .aboutme .technologies .item img{
+        height: 35px;
+    }
+    .projects .aboutme .technologies .item{
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .portfolio .projectsDisplay .project{
+        flex: 1 0 250px;
+    }
+    
+    .portfolio .projectsDisplay .project .tech img{
+        width: 60px;
+    }
+    .portfolio .projectsDisplay .project .tech .icon{
+        width: 30px;
+    }
+    .portfolio .projectsDisplay .project .tech .icon.css{
+        width: 21px;
+    }
+    .contact .heading{
+        margin-bottom: 20px;
+    }
+    .contact .talk{
+        font-size: 13px;
+    }
+    .contact .mainpart .form form .input{
+        flex-direction: column;
+    }
+    .contact .mainpart .contactinfo .buttom{
+        gap: 15px;
+    }
+    .contact .mainpart .form{
+        padding: 20px 10px;
+    }
+    .footer .logo .circle{
+        padding: 10px;
+        height: 30px;
+        color: white;
+        width: 30px;
+        border-radius: 50%;
+        border: solid rgb(255, 255, 255) 3px;
+    }
+    .footer .logo .circle h1{
+        font-size: 17px;
+    }
+    .footer .logo .text strong{
+        font-size: 20px;
+    }
+    .footer .logo .text p{
+        font-size: 9px;
+    }
+    .footer .content .buttom{
+        gap: 15px;
+        margin-top: 15px;
+    }
+ }
