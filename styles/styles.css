@@ -63,7 +63,6 @@ header .headbody{
     display: flex;
     padding: 0 70px;
     width: 100%;
-    max-width: 13000px;
     align-items: center;
     gap: 10px;
     background-color: rgb(255, 255, 255);
@@ -259,13 +258,8 @@ section .heading{
     margin: 10px 0;
 }
 .portfolio .projectsDisplay .project{
-    box-shadow: 0 0 20px rgba(68, 68, 68, 0.205);
-    padding: 10px;
     transition: all .3s;
-    flex: 1 0 400px;
-}
-.portfolio .projectsDisplay .project:hover{
-    box-shadow: none;
+    flex: 0 0 350px;
 }
 .portfolio .projectsDisplay .project p{
     color: gray;
@@ -280,17 +274,18 @@ section .heading{
     display: flex;
     gap: 10px;
 }
-.portfolio .projectsDisplay .project .tech .react{
-    background: white;
-}
 .portfolio .projectsDisplay .project .css{
     object-fit: cover;
 }
 .portfolio .projectsDisplay .project .css img{
     height: 30px;
 }
-.portfolio .projectsDisplay .project .tech img{
-    width: 100px;
+.portfolio .projectsDisplay .project .tech .list p{
+    color: rgb(39, 39, 39);
+    font-size: 15px;
+    border-radius: 4px;
+    box-shadow: -3px 0 10px rgb(0, 0, 0, 0.2);
+    padding: 5px 10px;
 }
 .portfolio .projectsDisplay .project .directories{
     display: flex;
@@ -301,6 +296,11 @@ section .heading{
     color: black;
     font-size: 12px;
     font-weight: 600;
+}
+.portfolio .projectsDisplay .project .directories i{
+    font-size: 15px;
+    color: gray;
+    margin-left: 5px;
 }
 .portfolio .projectsDisplay .project .tech .icon{
     width: 50px;
@@ -649,8 +649,6 @@ section .heading{
     header .head{
         padding: 15px;
     }
-    header .head .logo{
-    }
     header .headbody{
         padding: 0;
     }
@@ -687,16 +685,6 @@ section .heading{
     }
     .portfolio .projectsDisplay .project{
         flex: 1 0 250px;
-    }
-    
-    .portfolio .projectsDisplay .project .tech img{
-        width: 60px;
-    }
-    .portfolio .projectsDisplay .project .tech .icon{
-        width: 30px;
-    }
-    .portfolio .projectsDisplay .project .tech .icon.css{
-        width: 21px;
     }
     .contact .heading{
         margin-bottom: 20px;
