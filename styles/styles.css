@@ -65,18 +65,21 @@ header .headbody{
     width: 100%;
     align-items: center;
     gap: 10px;
-    background-color: rgb(255, 255, 255);
-    height: fit-content;
+    height: 700px;
     overflow: hidden;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 header .headbody .image{
-    width: 100%;
-    height: 800px;
+    height: 500px;
+    margin-top: -100px;
+}
+
+header .headbody .text{
+    width: 600px;
 }
 
 header .image img{
-    margin-top: 80px;
 }
 header .headbody .text h5{
     font-size: 12px;
@@ -493,7 +496,6 @@ section .heading{
     }
     header .headbody{
         padding: 0 30px;
-        margin: 0 auto;
     }
     section{
         padding: 30px;
@@ -531,34 +533,23 @@ section .heading{
     }
  }
  @media (max-width: 800px){
-    header .headbody{
-        height: fit-content;
-    }
-    header .headbody .text{
-        padding-top: 100px;
-    }
-    header .headbody .image{
-        object-fit: cover;
-        height: fit-content;
-    }
-    header .image img{
-        margin-top: 80px;
-        width: 300px;
-    }
     header nav h3{
         display: block;
     }
     header .head .menuoptions{
         position: absolute;
-        width: 200px;
+        width: 100%;
         height: 100vh;
         background: rgba(2, 0, 14, 0.9);
-        top: 0;
-        right: -400px;
-        transition: all .2s;
+        top: -10rem;
+        max-height: 0;
+        left: 0;
+        transition: all .5s ease;
     }
     header .head .menuoptions.active{
-        right: 0;
+        max-height: 100vh;
+        top: 0;
+        
     }
     header .head .menuoptions .closebtn{
         position: absolute;
@@ -572,8 +563,11 @@ section .heading{
         top: 70px;
         left: 20px;
         display: flex;
+        width: 100%;
+        height: 100%;
         gap: 10px;
         justify-content: center;
+        align-items: center;
         flex-direction: column;
     }
     header .head .menuoptions a{
@@ -582,9 +576,14 @@ section .heading{
         font-family: Arial, Helvetica, sans-serif;
     }
  }
- @media (max-width: 650px){
+ @media (max-width: 790px){
     header .headbody .text{
         position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
         width: 100%;
         padding: 0 20px;
         top: 400px;
@@ -597,6 +596,8 @@ section .heading{
     }
     header .headbody .image{
         width: 100%;
+        object-fit: cover;
+        height: fit-content;
         display: flex;
         justify-content: center;
         position: relative;
@@ -624,7 +625,7 @@ section .heading{
     }
     header .headbody{
         align-items: flex-start;
-        height: 900px
+        height: fit-content;
     }
     .projects .aboutme .aboutdetails p{
         font-size: 20px;
